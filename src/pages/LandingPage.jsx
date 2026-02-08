@@ -4,8 +4,11 @@ import { motion } from "framer-motion";
 import { Calendar, Clock } from "lucide-react";
 
 const LandingPage = ({ onOpenInvitation }) => {
-  const brideInitial = config.data.brideName?.charAt(0) ?? "B";
-  const groomInitial = config.data.groomName?.charAt(0) ?? "G";
+  const brideName = "Nikita";
+  const groomName = "Sajal";
+
+  const brideInitial = "N";
+  const groomInitial = "S";
 
   return (
     <motion.div
@@ -74,14 +77,14 @@ const LandingPage = ({ onOpenInvitation }) => {
                     <span className="flex h-8 w-8 items-center justify-center rounded-full bg-rose-50 text-rose-500 shadow-sm">
                       <Calendar className="h-4 w-4" />
                     </span>
-                    <span>25 December 2025</span>
+                    <span>9th March 2026</span>
                   </span>
                   <span className="hidden h-4 w-px bg-rose-100 sm:block" />
                   <span className="inline-flex items-center gap-2 text-sm font-medium text-gray-700">
                     <span className="flex h-8 w-8 items-center justify-center rounded-full bg-rose-50 text-rose-500 shadow-sm">
                       <Clock className="h-4 w-4" />
                     </span>
-                    <span>1:00 PM</span>
+                    <span>8:00 PM</span>
                   </span>
                 </div>
               </motion.div>
@@ -97,12 +100,14 @@ const LandingPage = ({ onOpenInvitation }) => {
                   Celebrating the union of
                 </p>
                 <h2 className="mt-2 font-serif text-2xl text-gray-900 sm:text-3xl">
-                  {config.data.brideName}
+                  {brideName}
                   <span className="mx-2 text-rose-400">&</span>
-                  {config.data.groomName}
+                  {groomName}
                 </h2>
                 <p className="mt-3 text-sm text-gray-600">
-                  {config.data.description}
+                  Join us for a multi-day Indian wedding filled with colour,
+                  music, and heartfelt rituals as we celebrate the union of{" "}
+                  {brideName} and {groomName}
                 </p>
               </motion.div>
 
@@ -128,9 +133,6 @@ const LandingPage = ({ onOpenInvitation }) => {
                       →
                     </motion.span>
                   </span>
-                  <div className="absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                    <div className="absolute inset-0 bg-gradient-to-r from-rose-600/90 via-pink-500/80 to-amber-400/60" />
-                  </div>
                 </motion.button>
               </motion.div>
 
@@ -140,7 +142,7 @@ const LandingPage = ({ onOpenInvitation }) => {
                 transition={{ delay: 0.8 }}
                 className="mt-5 text-center text-xs text-gray-500"
               >
-                Kindly join us in Jaipur to shower your blessings on the couple.
+                Venue: Kanak Garden (Lawn), NH-44, G.T. Road, Murthal, Sonipat
               </motion.p>
             </div>
           </div>

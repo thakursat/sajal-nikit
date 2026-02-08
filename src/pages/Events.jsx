@@ -53,7 +53,7 @@ export default function Events() {
               transition={{ delay: 0.4 }}
               className="text-gray-600 max-w-md mx-auto"
             >
-              From haldi to our grand reception finale, each ritual is woven
+              From haldi to our wedding, each ritual is woven
               with music, fragrance, and the blessings of our loved ones.
             </motion.p>
 

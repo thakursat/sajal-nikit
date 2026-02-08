@@ -18,16 +18,7 @@ const buildVenueList = () => {
       summary:
         "All pre-wedding rituals and the wedding ceremony will be celebrated amidst the courtyards of Jaipur Bagh.",
     },
-    {
-      id: "moon-and-mars",
-      title: config.data.receptionLocation,
-      address: config.data.receptionAddress,
-      embed: config.data.reception_maps_embed,
-      mapsUrl: config.data.reception_maps_url,
-      hostedEvents: receptionEvent ? [receptionEvent] : [],
-      summary:
-        "Our reception gala moves to Moon and Mars, where toasts, dinner, and our first dance close the festivities.",
-    },
+   
   ].filter((venue) => venue.title && venue.mapsUrl);
 };
 

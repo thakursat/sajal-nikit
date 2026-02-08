@@ -11,7 +11,7 @@ const celebrationBadges = [
   "Mehndi & Haldi",
   "Sangeet & Dhol",
   "Sacred Pheras",
-  "Reception Gala",
+  "Baraat Reception",
 ];
 
 const sanitizeTimeValue = (timeValue) => {
